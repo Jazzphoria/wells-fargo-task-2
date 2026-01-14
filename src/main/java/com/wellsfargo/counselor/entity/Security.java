@@ -36,12 +36,13 @@ public class Security {
 
     }
 
-    public Security (String name, String quantity, String category, Integer purchaseprice, Date purchaseDate) {
+    public Security (Portfolio portfolioId, String name, String quantity, String category, Integer purchaseprice, Date purchaseDate) {
         this.name = name;
         this.quantity = quantity;
         this.category = category;
         this.purchaseprice = purchaseprice;
         this.purchaseDate = purchaseDate;
+        this.portfolioId = portfolioId;
     }
 
     public long getSecurityId() {
@@ -89,5 +90,12 @@ public class Security {
     public void setpurchaseDate(Date purchaseDate) {
         this.purchaseDate = purchaseDate;
     }
-    
+
+    public Portfolio getPortfolioId() {
+        return portfolioId;
+    }
+
+    public void setPortfolioId(Portfolio portfolioId) {
+        this.portfolioId = portfolioId;
+    }
 }

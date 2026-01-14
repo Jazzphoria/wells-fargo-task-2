@@ -37,11 +37,12 @@ public class Client {
 
     }
 
-    public Client(String firstName, String lastName, String address, String phone, String email) {
+    public Client(Advisor advisor,String firstName, String lastName, String address, String phone, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
         this.phone = phone;
+        this.advisorId = advisor;
     }
 
     public long getClientId() {
